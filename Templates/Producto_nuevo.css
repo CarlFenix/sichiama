@@ -1,0 +1,71 @@
+/* Producto_nuevo.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif; /* Utilizando la fuente Quicksand */
+  }
+  
+  .container {
+    background-image: url('https://funcionactiva.com/imagenes/Tipos-de-cocineros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Texto en color blanco para contrastar con la imagen */
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo del formulario con opacidad */
+    margin: 10px auto;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  }
+  
+  h1 {
+    color: #d6394c; /* Rojo - color de la bandera italiana */
+  }
+  
+  label {
+    color: #000; /* Texto negro para resaltar sobre el fondo claro */
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d6394c; /* Rojo - color de la bandera italiana */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ae1e34; /* Rojo oscuro al pasar el ratón */
+  }
+  
+  /* Nuevo estilo para el botón de volver al Index */
+  .btn-danger {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f; /* Rojo - similar al botón de grabar */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c9302c; /* Rojo oscuro al pasar el ratón */
+  }
+  
+     

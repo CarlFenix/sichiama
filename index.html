@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>si chiama pasta</title>
+    <link rel="shortcut icon" href="favicon/Arg-Italy_PNG.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Merriweather:wght@900&family=Noto+Serif:wght@500&family=Pacifico&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Si Chiama Pasta</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reservas.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen fa-shake"></i>
+                                <span>Reservas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cocinadeautor.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                                <span>Cocina de autor</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-blog"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="solicitarContrasena()">
+                                <i class="fa-solid fa-key"></i>
+                                Administrar
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+114601253">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="galeria js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="galeria-cell" >
+                    <img src="img/sahand-hoseini-f9hHQgvpM8E-unsplash.jpg" alt="">
+                </div>
+              
+                <div class="galeria-cell">
+                    <img src="img/plato5.jpg" alt="">
+                </div>
+                <div class="galeria-cell">
+                    <img src="img/plato6.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Non siamo un ristorante di pasta, la pasta siamo noi!!!</h2>
+                <p>Pastas Caseras y Cocina Italiana</p>
+                <a href="leer_mas.html">
+                    <button>Leer Más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Sabores de Italia</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="sabor">
+                    <img src="img/istockphoto-636193070-170667a.webp" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ensaladas</h3>
+                    <p>Nuestras exquisitas ensaladas.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sabor">
+                    <img src="img/istockphoto-669861022-170667a.webp" alt="">
+                </div>
+                <div class="info">
+                    <h3>Postres</h3>
+                    <p>Delicias de nuestra tierra.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sabor">
+                    <img src="img/istockphoto-938742222-170667a.webp" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pizzas</h3>
+                    <p>Pizzas de autor.</p>
+                </div>
+            </div>
+        </div>
+        <a href="menu.html">
+            <button>Menu</button>
+        </a>
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Cocina de autor</h2>
+        <div class="fila">
+            <div class="item">
+                <img src="img/istockphoto-1394751592-612x612.jpg" alt="">
+                <p>Ravioli con pesto</p>
+            </div>
+            <div class="item">
+                <img src="img/istockphoto-622001636-612x612.jpg" alt="">
+                <p>Pasta con salsa di mare</p>
+            </div>
+            <div class="item">
+                <img src="img/istockphoto-1222146246-612x612 (1).jpg" alt="">
+                <p>Pasta con salsa blanca</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/istockphoto-184637819-612x612.jpg" alt="">
+                <p>Ravioles con salsa mediterranea</p>
+            </div>
+            <div class="item">
+                <img src="img/istockphoto-1679002464-612x612.jpg" alt="">
+                <p>Nuestra exquisita lasagna</p>
+            </div>
+            <div class="item">
+                <img src="img/istockphoto-1307469923-612x612.jpg" alt="">
+                <p>agñolotti en salsa vechamel</p>
+            </div>
+        </div>
+        <a href="cocinadeautor.html">
+            <button>Leer Más</button>
+        </a>
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>El arte de cocinar</h3>
+                        <p>Lo mejor de nuestra cocina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La cocina del 2023</h3>
+                        <p>Combinando tradición con cocina moderna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="blog.html">
+            <button>Leer Más</button>
+        </a>
+    </section>
+
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>Si Chiama Pasta</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#">Reservas</a>
+                <a href="#sabores">Cocina de autor</a>
+                <a href="#sabores">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Carlos G.</a>
+                <a href="#">María L.</a>
+                <a href="#">Bere J.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/hogarmania/status/1585209876137259009">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/pasta_italiana/">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+            <div class="col">
+                <h3>Oportunidades Laborales</h3>
+                <a href="Templates/producto_nuevo.html">Trabaja con nosotros</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        // Función para solicitar la contraseña
+        function solicitarContrasena() {
+            var contrasena = prompt("Ingrese la contraseña:");
+
+            // Verificar la contraseña (en este caso, "123456")
+            if (contrasena === "123456") {
+                // Contraseña correcta, redirigir a la página deseada
+                window.location.href = "templates/productos.html";
+            } else {
+                // Contraseña incorrecta, mostrar aviso
+                alert("Usuario inválido");
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

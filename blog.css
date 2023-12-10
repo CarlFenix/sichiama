@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Hind:wght@500&family=Merriweather:wght@900&family=Noto+Serif:wght@500&family=Pacifico&family=Qwitcher+Grypen:wght@700&display=swap');
+
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ***************** */
+/* SECCION I N I C I O */
+/* ***************** */
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#inicio header{
+    width: 100%;
+}
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+  
+
+}
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+#inicio header .contenido-header .logo h1{
+    color:black;
+    font-size: 30px;
+    font-family: 'Abel', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+
+
+
+
+
+}
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+    
+    
+}
+#inicio header .contenido-header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    margin: 0px 20px;
+    
+    
+}
+#inicio header .contenido-header nav ul li:hover i{
+    color: orange;
+}
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: solid 1px black;
+}
+#inicio header .contenido-header .social > i{
+    display: inline-block;
+    color:gainsboro;
+    margin-left: 10px;
+}
+
+.nav-responsive{
+   display: none;
+   font-size: 25px;
+   color: #a8a8a8;
+}
+#body .hist {
+    background-image: linear-gradient(60deg, #ce6242 0%, #972705 100%); 
+    height: 1000px;
+    width: 100%;
+}
+#body .hist h1{
+   text-align: center; 
+   color: #138f45;
+   font-size: 60px;
+   font-family: 'Lobster', sans-serif;
+   
+}
+#body .hist p{
+    text-align: justify;
+    font-size: 20px;
+    color: gainsboro;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Lobster', sans-serif;
+
+}
+img {
+    position: absolute;
+    top: 8.2em;
+    left: 0.1em;
+    width: 17%; 
+    border: 0.4rem solid green;
+}

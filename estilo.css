@@ -1,0 +1,424 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Hind:wght@500&family=Merriweather:wght@900&family=Noto+Serif:wght@500&family=Pacifico&family=Qwitcher+Grypen:wght@700&display=swap');
+
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ***************** */
+/* SECCION I N I C I O */
+/* ***************** */
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#inicio header{
+    width: 100%;
+}
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+  
+
+}
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+#inicio header .contenido-header .logo h1{
+    color:black;
+    font-size: 30px;
+    font-family: 'Abel', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+
+
+
+
+
+}
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+    
+    
+}
+#inicio header .contenido-header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    margin: 0px 20px;
+    
+    
+}
+#inicio header .contenido-header nav ul li:hover i{
+    color: orange;
+}
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: solid 1px black;
+}
+ 
+#inicio header .contenido-header .social > i{
+    display: inline-block;
+    color:gainsboro;
+    margin-left: 10px;
+}
+
+.nav-responsive{
+   display: none;
+   font-size: 25px;
+   color: #a8a8a8;
+}
+/* Carrusel */
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+#inicio .carrusel .info{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    text-align: center;
+    color:#fff;
+}
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+#inicio .carrusel .info button{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border:black;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#inicio .galeria {
+    width: 100%;
+    height: 100%;
+}
+  
+#inicio .galeria-cell {
+    width: 100%;
+    margin-right: 10px;
+    height: 100%;
+}
+#inicio .galeria-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#sabores a{
+    text-decoration: none;
+}
+
+
+#sabores{
+    padding: 50px 0;
+    
+}
+#sabores h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    
+
+
+
+}
+#sabores .fila{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+#sabores .fila .item img{
+    max-width: 80px;
+}
+#sabores .fila .item{
+    display: flex;
+    align-items:center;
+    margin: 20px 10px;
+    padding: 5px;
+}
+#sabores .fila .item:hover{
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+#sabores .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+#sabores button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border:solid 1px black;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+#platos{
+    background-image: linear-gradient(to right, #434343 0%, rgb(10, 85, 5) 100%);
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#platos h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#platos .fila{
+    max-width: 1100px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+#platos .fila .item{
+    width: 33%;
+    position:relative;
+    overflow: hidden;
+}
+#platos .fila .item img{
+    width: 100%;
+    display: block;
+}
+#platos .fila .item p{
+    position:absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: black;
+    transition: .5s;
+}
+#platos .fila .item:hover p{
+    bottom: 0;
+}
+#platos button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border:black;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px black;
+    
+}
+#platos  a{
+    text-decoration: none;
+}
+#blog a{
+    text-decoration: none;
+}
+
+#blog{
+    padding: 50px 0;
+    
+}
+#blog h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.galeria-blog{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.galeria-blog .gallery-cell .item{
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+.galeria-blog .gallery-cell img{
+    display: block;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid orange  ;
+    margin-right: 30px;
+}
+.galeria-blog .gallery-cell h3{
+    margin-bottom: 7px;
+}
+.galeria-blog .gallery-cell p{
+    color: #a8a8a8;
+    font-style: italic;
+}
+#blog button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border:none;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px black;
+    
+}
+
+
+
+#contacto{
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    padding: 50px 0;
+}
+#contacto .fila{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+#contacto a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    margin-bottom: 3px;
+}
+#contacto a:hover{
+    text-decoration: underline;
+}
+#contacto h3{
+    margin-bottom: 12px;
+}
+#contacto .media{
+    display: flex;
+    align-items: center;
+}
+#contacto .media i{
+    display: block;
+    margin-right: 10px;
+}
+#contacto input{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+}
+#contacto .enviar{
+    background-color:black;
+    color:white;
+    width: fit-content;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1070px) {
+    #inicio header .contenido-header .social{
+        display: none;
+    }
+    #inicio header .contenido-header nav{
+        position: static;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width:700px) {
+    #sabores .fila{
+        display: block;
+    }
+    #platos .fila{
+        display: block;
+        width: 100%;
+    }
+    #platos .fila .item{
+        width: 100%;
+    }
+    #inicio header .contenido-header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    .nav-responsive{
+        display: block;
+    }
+    #inicio header .contenido-header{
+        padding: 20px;
+    }
+    #inicio header .contenido-header nav.responsive{
+        display: block;
+        position:absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color:grey;
+        z-index: 99;
+    }
+    nav.responsive ul{
+        display: block ;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+
+    #contacto .fila{
+        display: block;
+        text-align: center;
+    }
+    #contacto .fila h3{
+        margin: 20px 0 3px 0;
+    }
+    #contacto .fila .media{
+        display: block;
+    }
+    #contacto .fila input{
+        width: 90%;
+    }
+}

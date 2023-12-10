@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="formulario.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header id="inicio">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <h1 class="logo">Reservas</h1>
+        <div class="contacto-rebote">
+            <div class="contacto-form">
+                <h3>Hace tu reserva !!!</h3>
+                <form action="http://127.0.0.1:5000/reservas" method="post" onsubmit="return validarFormulario()">
+                    <p>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <span id="errorNombre" class="error"></span>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <span id="errorEmail" class="error"></span>
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="number" name="telefono" id="telefono" required>
+                        <span id="errorTelefono" class="error"></span>
+                    </p>
+                    <p>
+                        <label>Cantidad de personas</label>
+                        <input type="number" name="cantidad" id="cantidad" required>
+                        <span id="errorCantidad" class="error"></span>
+                    </p>
+                    <p>
+                        <label>Dia de la reserva</label>
+                        <input type="date" name="dia" id="dia" required>
+                        <span id="errorDia" class="error"></span>
+                    </p>
+                    <p class="bloque">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="3" required></textarea>
+                        <span id="errorMensaje" class="error"></span>
+                    </p>
+                    <p class="bloque">
+                        <button>Enviar</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Si chiama pasta</h4>
+                <ul>
+                    <li><i class="direccion"></i> Av gaona 6654</li>
+                    <li><i class="telefono"></i> (011)02234601253 </li>
+                    <li><i class="mail-contacto"></i> Reservassp@gmail.com</li>
+                </ul>
+                <p>Non siamo un ristorante di pasta, la pasta siamo noi!!!</p>
+                <p>Restaurante.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52440.790477134076!2d-58.474596178320354!3d-34.76694189999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2ec3b0d3433%3A0xf29a79e4183d88d7!2sPasta%20Rossa!5e0!3m2!1ses-419!2sar!4v1698458878043!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var telefono = document.getElementById('telefono').value;
+            var cantidad = document.getElementById('cantidad').value;
+            var dia = document.getElementById('dia').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            var errorNombre = document.getElementById('errorNombre');
+            var errorEmail = document.getElementById('errorEmail');
+            var errorTelefono = document.getElementById('errorTelefono');
+            var errorCantidad = document.getElementById('errorCantidad');
+            var errorDia = document.getElementById('errorDia');
+            var errorMensaje = document.getElementById('errorMensaje');
+
+            var valido = true;
+
+            // Validar nombre
+            if (nombre.trim() === "") {
+                errorNombre.innerHTML = "El nombre es obligatorio";
+                valido = false;
+            } else {
+                errorNombre.innerHTML = "";
+            }
+
+            // Validar email
+            if (email.trim() === "") {
+                errorEmail.innerHTML = "El correo electrónico es obligatorio";
+                valido = false;
+            } else {
+                errorEmail.innerHTML = "";
+            }
+
+            // Validar telefono
+            if (telefono.trim() === "") {
+                errorTelefono.innerHTML = "El teléfono es obligatorio";
+                valido = false;
+            } else {
+                errorTelefono.innerHTML = "";
+            }
+
+            // Validar cantidad
+            if (cantidad.trim() === "") {
+                errorCantidad.innerHTML = "La cantidad de personas es obligatoria";
+                valido = false;
+            } else {
+                errorCantidad.innerHTML = "";
+            }
+
+            // Validar día
+            if (dia.trim() === "") {
+                errorDia.innerHTML = "El día de la reserva es obligatorio";
+                valido = false;
+            } else {
+                errorDia.innerHTML = "";
+            }
+
+            // Validar mensaje
+            if (mensaje.trim() === "") {
+                errorMensaje.innerHTML = "El mensaje es obligatorio";
+                valido = false;
+            } else {
+                errorMensaje.innerHTML = "";
+            }
+
+            return valido;
+        }
+    </script>
+    
+</body>
+</html>

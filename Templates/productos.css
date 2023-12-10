@@ -1,0 +1,41 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Estilos del encabezado */
+#header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Estilos del contenido principal */
+main {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 50px;
+}
+
+/* Estilos de los botones */
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+/* Estilos de la tabla */
+.table {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
